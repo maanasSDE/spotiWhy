@@ -18,10 +18,6 @@ function App() {
 
       <Player />
     </div>
-    <div>
-
-      
-    </div>
   );
 }
 
