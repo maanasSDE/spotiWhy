@@ -3,7 +3,7 @@ import { Home, Search, Library, Plus, Heart } from "lucide-react";
 
 export function Sidebar() {
   return (
-    <aside className="w-64 bg-black text-gray-300 p-6 flex flex-col h-screen">
+    <aside className="w-64 bg-black text-gray-300 p-4 flex flex-col h-screen">
       <div className="mb-8">
         <img src="/spotify-white.svg" alt="Spotify" className="h-10" />
       </div>
