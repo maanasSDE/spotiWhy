@@ -11,7 +11,7 @@ import {
 export function Player() {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-black bg-opacity-95 text-white p-4 border-t border-gray-800">
-      <div className="flex items-center justify-between max-w-screen-xl mx-auto">
+      <div className="flex items-center justify-between max-w-screen-l mx-auto">
         <div className="flex items-center space-x-4 w-1/3">
           <img
             src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=50&h=50&fit=crop"

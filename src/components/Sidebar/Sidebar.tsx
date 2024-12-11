@@ -1,4 +1,3 @@
-import React from "react";
 import { Home, Search, Library, Plus, Heart } from "lucide-react";
 import { NavLink } from "./NavLink";
 import { PlaylistItem } from "./PlaylistItem";
