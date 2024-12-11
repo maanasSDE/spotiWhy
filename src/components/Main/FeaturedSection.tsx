@@ -1,5 +1,3 @@
-import React from "react";
-
 interface FeaturedCardProps {
   title: string;
   imageUrl: string;
