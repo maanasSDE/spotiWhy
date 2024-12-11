@@ -1,4 +1,3 @@
-import React from "react";
 import { ChevronLeft, ChevronRight, Bell, User } from "lucide-react";
 
 export function Header() {
