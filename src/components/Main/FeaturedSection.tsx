@@ -6,23 +6,37 @@ interface FeaturedCardProps {
 
 function FeaturedCard({ title, imageUrl, description }: FeaturedCardProps) {
   return (
-    <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-lg hover:bg-gray-800 transition cursor-pointer">
-      <img
-        src={imageUrl}
-        alt={title}
-        className="w-full h-48 object-cover rounded mb-4"
-      />
-      <h3 className="font-bold text-white mb-1">{title}</h3>
-      <p className="text-sm text-gray-400">{description}</p>
-    </div>
+    <a
+      href="#"
+      className="p-4 rounded-lg bg-[#181818] hover:bg-[#282828] transition-all duration-300 group"
+    >
+      <div className="relative">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="aspect-square w-full object-cover rounded-md shadow-lg mb-4"
+        />
+        <button className="absolute right-2 bottom-2 w-12 h-12 bg-[#1db954] rounded-full shadow-xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center justify-center">
+          <svg
+            className="w-6 h-6 text-black"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+      </div>
+      <h3 className="font-bold mb-1 truncate">{title}</h3>
+      <p className="text-sm text-[#b3b3b3] line-clamp-2">{description}</p>
+    </a>
   );
 }
 
 export function FeaturedSection() {
   return (
     <section className="mb-8">
-      <h2 className="text-2xl font-bold text-white mb-6">Featured Playlists</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <h2 className="text-2xl font-bold mb-4">Featured Playlists</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         <FeaturedCard
           title="Bollywood Butter"
           imageUrl="https://images.unsplash.com/photo-1470019693664-1d202d2c0907?w=500&h=500&fit=crop"
