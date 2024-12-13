@@ -1,0 +1,33 @@
+import { Play } from "lucide-react";
+
+export function MobilePlayer() {
+  return (
+    <div className="fixed bottom-0 left-0 right-0 bg-[#181818] border-t border-[#282828] p-2">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center flex-1 min-w-0">
+          <img
+            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=50&h=50&fit=crop"
+            alt="Current track"
+            className="w-12 h-12 rounded flex-shrink-0"
+          />
+          <div className="ml-3 flex-1 min-w-0">
+            <h4 className="text-sm font-medium text-white truncate">
+              Tum Hi Ho
+            </h4>
+            <p className="text-xs text-[#b3b3b3] truncate">Arijit Singh</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-6 ml-4">
+          <button className="text-white p-2">
+            <Play size={24} fill="currentColor" />
+          </button>
+        </div>
+      </div>
+      <div className="mt-2">
+        <div className="h-1 bg-[#4d4d4d] rounded-full">
+          <div className="w-1/3 h-full bg-white rounded-full"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
