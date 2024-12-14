@@ -1,5 +1,3 @@
-import React from "react";
-
 interface RecentCardProps {
   title: string;
   imageUrl: string;
