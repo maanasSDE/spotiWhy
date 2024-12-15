@@ -2,7 +2,7 @@ import { Play } from "lucide-react";
 
 export function MobilePlayer() {
   return (
-    <div className="fixed bottom-[70px] left-0 right-0 z-40 bg-[#181818] border-t border-[#282828] mx-2 p-2 rounded-lg">
+    <div className="fixed bottom-[70px] left-0 right-0  bg-[#181818] border-t border-[#282828] mx-3 p-2 rounded-lg">
       <div className="flex items-center justify-between">
         <div className="flex items-center flex-1 min-w-0">
           <img
