@@ -1,8 +1,21 @@
-import { Shuffle, SkipBack, Play, SkipForward, Repeat } from "lucide-react";
+import {
+  Shuffle,
+  SkipBack,
+  Play,
+  Pause,
+  SkipForward,
+  Repeat,
+} from "lucide-react";
 import { useState } from "react";
 
 export function PlayControls() {
   const [value, setValue] = useState(33);
+
+  const [isSun, setIsSun] = useState(true);
+
+  const toggleIcon = () => {
+    setIsSun(!isSun); // Toggle the state
+  };
 
   return (
     <div className="flex flex-col items-center max-w-[45%] w-full">
@@ -13,8 +26,15 @@ export function PlayControls() {
         <button className="text-[#b3b3b3] hover:text-white transition">
           <SkipBack size={20} />
         </button>
-        <button className="bg-white rounded-full p-2 hover:scale-105 transition">
-          <Play size={20} fill="black" />
+        <button
+          onClick={toggleIcon}
+          className="bg-white rounded-full p-2 hover:scale-105 transition"
+        >
+          {isSun ? (
+            <Play size={20} fill="black" />
+          ) : (
+            <Pause size={20} fill="black" />
+          )}
         </button>
         <button className="text-[#b3b3b3] hover:text-white transition">
           <SkipForward size={20} />
