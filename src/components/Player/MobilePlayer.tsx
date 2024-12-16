@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, Pause } from "lucide-react";
+import { Play, Pause, PlusCircle, MonitorSpeaker } from "lucide-react";
 
 export function MobilePlayer() {
   const [isPlaying, setisPlaying] = useState(true);
@@ -24,12 +24,18 @@ export function MobilePlayer() {
             <p className="text-xs text-[#b3b3b3] truncate">Arijit Singh</p>
           </div>
         </div>
-        <div className="flex items-center gap-6 ml-4">
+        <div className="flex items-center gap-2 ml-4">
+          <button className="text-white p-2">
+            <MonitorSpeaker size={25} />
+          </button>
+          <button className="text-white p-2">
+            <PlusCircle size={25} />
+          </button>
           <button onClick={toggleIcon} className="text-white p-2">
             {isPlaying ? (
-              <Play size={20} fill="currentColor" />
+              <Play size={25} fill="currentColor" />
             ) : (
-              <Pause size={20} fill="currentColor" />
+              <Pause size={25} fill="currentColor" />
             )}
           </button>
         </div>
