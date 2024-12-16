@@ -1,6 +1,13 @@
-import { Play } from "lucide-react";
+import { useState } from "react";
+import { Play, Pause } from "lucide-react";
 
 export function MobilePlayer() {
+  const [isPlaying, setisPlaying] = useState(true);
+
+  const toggleIcon = () => {
+    setisPlaying(!isPlaying); // Toggle the state
+  };
+
   return (
     <div className="fixed bottom-[70px] left-0 right-0  bg-[#181818] border-t border-[#282828] mx-3 p-2 rounded-lg">
       <div className="flex items-center justify-between">
@@ -18,8 +25,12 @@ export function MobilePlayer() {
           </div>
         </div>
         <div className="flex items-center gap-6 ml-4">
-          <button className="text-white p-2">
-            <Play size={24} fill="currentColor" />
+          <button onClick={toggleIcon} className="text-white p-2">
+            {isPlaying ? (
+              <Play size={20} fill="currentColor" />
+            ) : (
+              <Pause size={20} fill="currentColor" />
+            )}
           </button>
         </div>
       </div>
