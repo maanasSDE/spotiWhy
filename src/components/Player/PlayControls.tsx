@@ -11,10 +11,10 @@ import { useState } from "react";
 export function PlayControls() {
   const [value, setValue] = useState(33);
 
-  const [isSun, setIsSun] = useState(true);
+  const [isPlaying, setisPlaying] = useState(true);
 
   const toggleIcon = () => {
-    setIsSun(!isSun); // Toggle the state
+    setisPlaying(!isPlaying); // Toggle the state
   };
 
   return (
@@ -30,7 +30,7 @@ export function PlayControls() {
           onClick={toggleIcon}
           className="bg-white rounded-full p-2 hover:scale-105 transition"
         >
-          {isSun ? (
+          {isPlaying ? (
             <Play size={20} fill="black" />
           ) : (
             <Pause size={20} fill="black" />
