@@ -1,6 +1,12 @@
 import { Heart } from "lucide-react";
+import React, { useState } from "react";
 
 export function TrackInfo() {
+  const [color, setColor] = useState("black");
+
+  const likedSong = () => {
+    setColor((prevColor) => (prevColor === "black" ? "red" : "black"));
+  };
   return (
     <div className="flex items-center min-w-[180px] max-w-[30%]">
       <img
@@ -17,7 +23,13 @@ export function TrackInfo() {
         </p>
       </div>
       <button className="text-[#b3b3b3] hover:text-white transition">
-        <Heart size={20} />
+        <Heart
+          size={20}
+          onClick={likedSong}
+          style={{
+            fill: color,
+          }}
+        />
       </button>
     </div>
   );
