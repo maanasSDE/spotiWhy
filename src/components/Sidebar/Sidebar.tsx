@@ -42,9 +42,6 @@ export function Sidebar() {
           <PlaylistItem title="Tamil Hits" />
           <PlaylistItem title="Telugu Trending" />
           <PlaylistItem title="Malayalam Classics" />
-          <PlaylistItem title="Kannada Hits" />
-          <PlaylistItem title="Marathi Mix" />
-          <PlaylistItem title="Bengali Beats" />
         </div>
       </div>
     </aside>
