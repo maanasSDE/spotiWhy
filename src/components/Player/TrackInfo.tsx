@@ -1,5 +1,5 @@
 import { Heart } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export function TrackInfo() {
   const [color, setColor] = useState("black");

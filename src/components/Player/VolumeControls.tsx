@@ -1,10 +1,22 @@
-import { Volume2, Maximize2 } from "lucide-react";
+import {
+  Volume2,
+  Maximize2,
+  ArrowDownRightSquareIcon,
+  Mic2,
+  PlaySquare,
+} from "lucide-react";
 import { useState } from "react";
 
 export function VolumeControls() {
   const [value, setValue] = useState(50);
   return (
-    <div className="flex items-center gap-2 min-w-[180px] justify-end">
+    <div className="flex items-center gap-4 min-w-[180px] justify-end">
+      <button className="text-[#b3b3b3] hover:text-white transition">
+        <PlaySquare size={20} />
+      </button>
+      <button className="text-[#b3b3b3] hover:text-white transition">
+        <Mic2 size={20} />
+      </button>
       <button className="text-[#b3b3b3] hover:text-white transition">
         <Volume2 size={20} />
       </button>
@@ -36,6 +48,9 @@ export function VolumeControls() {
       </div>
       <button className="text-[#b3b3b3] hover:text-white transition">
         <Maximize2 size={20} />
+      </button>
+      <button className="text-[#b3b3b3] hover:text-white transition">
+        <ArrowDownRightSquareIcon size={20} />
       </button>
     </div>
   );
