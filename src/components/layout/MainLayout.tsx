@@ -2,7 +2,7 @@ import React from "react";
 import { Sidebar } from "../sidebar/Sidebar";
 import { MobileNav } from "../navigation/MobileNav";
 import { NowPlaying } from "../player/NowPlaying";
-
+import { HeaderWeb } from "../header/HeaderWeb";
 interface MainLayoutProps {
   children: React.ReactNode;
 }
@@ -10,6 +10,7 @@ interface MainLayoutProps {
 export function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="h-screen bg-black text-white">
+      <HeaderWeb />
       <div className="flex h-full">
         <Sidebar />
         <main className="flex-1 relative">
