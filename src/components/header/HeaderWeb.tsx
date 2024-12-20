@@ -5,6 +5,7 @@ import {
   User,
   SmilePlus,
   Ellipsis,
+  Search,
 } from "lucide-react";
 
 export function HeaderWeb() {
@@ -21,6 +22,21 @@ export function HeaderWeb() {
             </button>
             <button className="bg-black/70 p-1 rounded-full hover:bg-black/90 transition">
               <ChevronRight className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+
+        <div className="w-full max-w-sm min-w-[200px]">
+          <div className="relative">
+            <input
+              className="w-full bg-transparent bg-[#1a1a1a] placeholder:text-gray-500 text-white text-sm rounded-3xl pl-4 pr-28 py-2 transition duration-300 ease focus:outline-none focus:border-white"
+              placeholder="What do you wanna play?"
+            />
+            <button
+              className="absolute top-1 right-1 flex items-center px-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow disabled:shadow-none"
+              type="button"
+            >
+              <Search />
             </button>
           </div>
         </div>

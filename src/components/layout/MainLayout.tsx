@@ -14,7 +14,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       <div className="flex h-full">
         <Sidebar />
         <main className="flex-1 relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-black">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1f1f1f] to-[#121212]">
             <div className="h-full overflow-y-auto pb-24 lg:pb-28">
               {children}
             </div>
