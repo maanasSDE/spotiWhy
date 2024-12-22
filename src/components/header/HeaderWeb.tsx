@@ -29,7 +29,7 @@ export function HeaderWeb() {
         <div className="w-full max-w-sm min-w-[200px]">
           <div className="relative">
             <input
-              className="w-full bg-transparent bg-[#1a1a1a] placeholder:text-gray-500 text-white text-sm rounded-3xl pl-4 pr-28 py-2 transition duration-300 ease focus:outline-none focus:border-white"
+              className="w-full bg-[#1b1b1b] placeholder:text-gray-500 text-white text-sm rounded-3xl pl-4 pr-28 py-2  focus:border-white"
               placeholder="What do you wanna play?"
             />
             <button
