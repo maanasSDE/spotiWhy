@@ -33,7 +33,7 @@ export function HeaderWeb() {
               placeholder="What do you wanna play?"
             />
             <button
-              className="absolute top-1 right-1 flex items-center px-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow disabled:shadow-none"
+              className="absolute top-1 right-1 flex items-center px-2.5 border border-transparent text-center text-sm text-white"
               type="button"
             >
               <Search />
