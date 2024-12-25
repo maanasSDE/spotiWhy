@@ -35,18 +35,12 @@ Before running this project, you'll need:
 
 2. Log in with your Spotify account (create one if needed)
 
-3. Click "Create an App"
-
-   - Fill in the app name (e.g., "Spotify India Clone")
-   - Add a brief description
-   - Accept the terms of service
-
-4. Once created, you'll see your:
+3. Once created, you'll see your:
 
    - Client ID
    - Client Secret (click "Show Client Secret")
 
-5. Add Redirect URIs:
+4. Add Redirect URIs:
    - Click "Edit Settings"
    - Add `http://localhost:5173/callback` under Redirect URIs
    - Save changes
