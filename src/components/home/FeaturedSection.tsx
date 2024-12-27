@@ -39,22 +39,27 @@ export function FeaturedSection() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         <FeaturedCard
           title="One Direction"
-          imageUrl="https://images.unsplash.com/photo-1470019693664-1d202d2c0907?w=500&h=500&fit=crop"
+          imageUrl="https://upload.wikimedia.org/wikipedia/en/7/79/Take_Me_Home_by_One_Direction.png"
           description=""
         />
         <FeaturedCard
           title="Ed Sheeran"
-          imageUrl="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=500&h=500&fit=crop"
+          imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg/330px-Ed_Sheeran-6886_%28cropped%29.jpg"
           description=""
         />
         <FeaturedCard
-          title="Punjabi Hits"
-          imageUrl="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=500&h=500&fit=crop"
-          description="Top Punjabi tracks that rule the charts"
+          title="Pritam"
+          imageUrl="https://a10.gaanacdn.com/gn_img/artists/zLp36PvbrG/Lp36AR0KrG/size_l_1716815534.webp"
+          description="Top Pritam tracks that rule the charts"
         />
         <FeaturedCard
-          title="Tamil Bestsellers"
-          imageUrl="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&h=500&fit=crop"
+          title="John Denver"
+          imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/John_Denver_1974.jpg/330px-John_Denver_1974.jpg"
+          description="Best of Kollywood music"
+        />
+        <FeaturedCard
+          title="KK"
+          imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/KK_%28124%29.jpg/255px-KK_%28124%29.jpg"
           description="Best of Kollywood music"
         />
       </div>
