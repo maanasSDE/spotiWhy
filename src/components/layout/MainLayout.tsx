@@ -1,7 +1,7 @@
 import React from "react";
-import { Sidebar } from "../sidebar/Sidebar";
+import { Sidebar } from "../Sidebar/Sidebar";
 import { MobileNav } from "../navigation/MobileNav";
-import { NowPlaying } from "../player/NowPlaying";
+import { NowPlaying } from "../Player/NowPlaying";
 import { HeaderWeb } from "../header/HeaderWeb";
 interface MainLayoutProps {
   children: React.ReactNode;
