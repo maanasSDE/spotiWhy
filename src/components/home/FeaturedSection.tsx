@@ -71,6 +71,11 @@ export function FeaturedSection() {
           description="The hottest Bollywood songs, refreshed daily!"
         />
         <FeaturedCard
+          title="Bollywood & Chill"
+          imageUrl="https://media.istockphoto.com/id/1253945768/vector/sale2.jpg?s=612x612&w=0&k=20&c=msJYpJQZitTc1LysKHSUoY9PdTLpD_RBhzSpreqkSxo="
+          description="Best of Bollywood has to offer"
+        />
+        <FeaturedCard
           title="Indie India"
           imageUrl="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=500&h=500&fit=crop"
           description="Best of independent Indian artists"
