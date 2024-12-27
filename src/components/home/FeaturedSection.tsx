@@ -35,6 +35,29 @@ function FeaturedCard({ title, imageUrl, description }: FeaturedCardProps) {
 export function FeaturedSection() {
   return (
     <section className="mb-8 mt-12">
+      <h2 className="text-2xl font-bold mb-4">Made for You</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <FeaturedCard
+          title="One Direction"
+          imageUrl="https://images.unsplash.com/photo-1470019693664-1d202d2c0907?w=500&h=500&fit=crop"
+          description=""
+        />
+        <FeaturedCard
+          title="Ed Sheeran"
+          imageUrl="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=500&h=500&fit=crop"
+          description=""
+        />
+        <FeaturedCard
+          title="Punjabi Hits"
+          imageUrl="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=500&h=500&fit=crop"
+          description="Top Punjabi tracks that rule the charts"
+        />
+        <FeaturedCard
+          title="Tamil Bestsellers"
+          imageUrl="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&h=500&fit=crop"
+          description="Best of Kollywood music"
+        />
+      </div>
       <h2 className="text-2xl font-bold mb-4">Featured Playlists</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         <FeaturedCard
