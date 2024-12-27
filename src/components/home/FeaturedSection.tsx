@@ -34,7 +34,7 @@ function FeaturedCard({ title, imageUrl, description }: FeaturedCardProps) {
 
 export function FeaturedSection() {
   return (
-    <section className="mb-8">
+    <section className="mb-8 mt-12">
       <h2 className="text-2xl font-bold mb-4">Featured Playlists</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         <FeaturedCard
