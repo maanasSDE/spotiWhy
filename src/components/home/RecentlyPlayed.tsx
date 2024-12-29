@@ -68,6 +68,39 @@ export function RecentlyPlayed() {
           artist="Dance to the latest Punjabi hits"
         />
       </div>
+      <h2 className="text-2xl font-bold mb-4">Best Of Artists</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+        <RecentCard
+          title="KK"
+          imageUrl="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&h=300&fit=crop"
+          artist="Based on your recent listening"
+        />
+        <RecentCard
+          title="Rahat Fateh Ali Khan"
+          imageUrl="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop"
+          artist="Your daily update of the most played tracks"
+        />
+        <RecentCard
+          title="Arijit Singh"
+          imageUrl="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=300&h=300&fit=crop"
+          artist="Relax and indulge with beautiful piano pieces"
+        />
+        <RecentCard
+          title="Badshah"
+          imageUrl="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300&h=300&fit=crop"
+          artist="Unplugged versions of your favorite songs"
+        />
+        <RecentCard
+          title="Sonu Nigam"
+          imageUrl="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&h=300&fit=crop"
+          artist="Chill beats with Hindi vocals"
+        />
+        <RecentCard
+          title="Mohit Chauhan"
+          imageUrl="https://images.unsplash.com/photo-1501612780327-45045538702b?w=300&h=300&fit=crop"
+          artist="Dance to the latest Punjabi hits"
+        />
+      </div>
     </section>
   );
 }
