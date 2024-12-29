@@ -10,9 +10,9 @@ interface MainLayoutProps {
 
 export function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className="bg-[#1f1f1f]">
+    <div className="bg-[#1f1f1f] block">
       <MobileCategories />
-      <div className="h-screen bg-black text-white">
+      <div className="h-screen block bg-black text-white">
         <HeaderWeb />
         <div className="flex h-full">
           <Sidebar />
