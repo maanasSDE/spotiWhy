@@ -6,7 +6,7 @@ interface CategoryButtonProps {
 function CategoryButton({ text, active }: CategoryButtonProps) {
   return (
     <button
-      className={`px-4 py-2 rounded-3xl whitespace-nowrap overflow-x-visible
+      className={`px-4 py-1 rounded-3xl text-sm font-medium whitespace-nowrap overflow-x-visible
         ${
           active
             ? "bg-[#3ebe55] text-black"
