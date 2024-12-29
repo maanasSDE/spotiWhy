@@ -20,7 +20,7 @@ function CategoryButton({ text, active }: CategoryButtonProps) {
 
 export function MobileCategories() {
   return (
-    <div className="lg:hidden -mx-4 px-6 pt-4 overflow-x-visible">
+    <div className="lg:hidden bg-[#1f1f1f] fixed z-20 top-0 left-0 right-0 -mx-4 px-6 pt-4">
       <div className="overflow-x-auto">
         <div className="flex gap-2 pb-4">
           <CategoryButton text="All" active />
