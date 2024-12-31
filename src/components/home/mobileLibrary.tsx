@@ -35,18 +35,18 @@ export function MobileLibrary() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-2">
+    <div className="lg:hidden grid grid-cols-2 gap-2">
       {playlists.map((playlist, index) => (
         <a
           key={index}
           href="#"
-          className="relative rounded-lg overflow-hidden aspect-[3/2] bg-[#282828]"
+          className="relative rounded-lg overflow-hidden aspect-[5/1] bg-[#282828]"
         >
           {playlist.gradient ? (
             <div className={`absolute inset-0 ${playlist.gradient}`}>
               {playlist.icon === "heart" && (
                 <div className="absolute left-3 bottom-3">
-                  <Heart className="w-6 h-6 text-white" fill="white" />
+                  <Heart className="w-3 h-3 text-white" fill="white" />
                 </div>
               )}
             </div>
