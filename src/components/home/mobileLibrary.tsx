@@ -3,7 +3,8 @@ import { Heart } from "lucide-react";
 export function MobileLibrary() {
   const playlists = [
     {
-      gradient: "bg-gradient-to-br from-indigo-500 to-purple-500",
+      gradient:
+        "bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-700",
       icon: "heart",
     },
     {
@@ -44,12 +45,12 @@ export function MobileLibrary() {
         >
           {playlist.gradient ? (
             <div
-              className={`absolute font-bold text-base pl-10 pt-5 inset-0 ${playlist.gradient}`}
+              className={`absolute font-bold text-base pl-10 pt-6 inset-0 ${playlist.gradient}`}
             >
               Liked Songs
               {playlist.icon === "heart" && (
                 <div className="absolute left-3 bottom-3">
-                  <Heart className="pb-1 w-5 h-5 text-white" fill="white" />
+                  <Heart className="w-5 h-5 text-white" fill="white" />
                 </div>
               )}
             </div>
